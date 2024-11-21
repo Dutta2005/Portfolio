@@ -39,6 +39,9 @@ export default function Contact() {
                     type: "success",
                     message: "Form submitted successfully!",
                 });
+                setTimeout(() => {
+                    setFormStatus(null), 5000
+                })
                 setFormData({
                     name: "",
                     email: "",
@@ -50,6 +53,9 @@ export default function Contact() {
                     type: "error",
                     message: "Failed to submit the form. Please try again.",
                 });
+                setTimeout(() => {
+                    setFormStatus(null), 5000
+                })
             }
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -57,6 +63,9 @@ export default function Contact() {
                 type: "error",
                 message: "An error occurred. Please try again.",
             });
+            setTimeout(() => {
+                setFormStatus(null), 5000
+            })
         }
     
         setShowModal(false);
