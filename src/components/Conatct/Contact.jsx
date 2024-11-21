@@ -21,9 +21,7 @@ export default function Contact() {
             ...formData,
             access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
         });
-
-        console.log(json.access_key);
-
+    
         try {
             const res = await fetch(import.meta.env.VITE_WEB3FORMS_URL, {
                 method: "POST",
@@ -33,8 +31,9 @@ export default function Contact() {
                 },
                 body: json,
             });
+    
             const response = await res.json();
-
+    
             if (response.success) {
                 setFormStatus({
                     type: "success",
@@ -46,17 +45,11 @@ export default function Contact() {
                     tel: "",
                     message: "",
                 });
-                setTimeout(() => {
-                    setFormStatus(null);
-                }, 5000)
             } else {
                 setFormStatus({
                     type: "error",
                     message: "Failed to submit the form. Please try again.",
                 });
-                setTimeout(() => {
-                    setFormStatus(null);
-                }, 5000)
             }
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -65,9 +58,10 @@ export default function Contact() {
                 message: "An error occurred. Please try again.",
             });
         }
-
+    
         setShowModal(false);
     };
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
