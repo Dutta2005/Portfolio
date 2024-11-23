@@ -45,11 +45,13 @@ export default function Contact() {
                     tel: "",
                     message: "",
                 });
+                console.log("Form submitted successfully:", response);
             } else {
                 setFormStatus({
                     type: "error",
                     message: "Failed to submit the form. Please try again.",
                 });
+                console.error("Form submission failed:", response);
             }
         } catch (error) {
             console.error("Error submitting form:", error);
