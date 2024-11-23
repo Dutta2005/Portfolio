@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Gradient for text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#41D1FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3813C2;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradient for background circle -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#8E44AD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1C1C1C;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="75" cy="75" r="70" fill="url(#bgGradient)" />
+  <!-- RD Text -->
+  <text x="50%" y="55%" text-anchor="middle" alignment-baseline="middle"
+    font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="bold"
+    fill="url(#textGradient)" transform="translate(0, 10)">
+    RD
+  </text>
+</svg>
