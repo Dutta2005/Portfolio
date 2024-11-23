@@ -4,34 +4,39 @@ import { motion } from "framer-motion";
 export default function Projects() {
     const projects = [
         {
-            title: "Text Summarizer",
-            description: "A web application using HTML, CSS, and JavaScript with ChatGPT-4 API which summarizes text.",
-            imageUrl: "https://images.pexels.com/photos/29448394/pexels-photo-29448394/free-photo-of-close-up-of-an-open-book-with-text.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/text-summarizer",
-        },
-        {
-            title: "Ninja Quiz",
-            description: "A quiz game built with HTML, CSS, and JavaScript.",
-            imageUrl: "https://images.pexels.com/photos/28311384/pexels-photo-28311384/free-photo-of-scrabble-board-with-letters-and-numbers-on-it.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/ninja-quiz",
-        },
-        {
             title: "Note App",
             description: "A web application using HTML, CSS, and JavaScript that allows users to create and manage notes.",
             imageUrl: "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=600",
             projectLink: "https://github.com/Dutta2005/noteApp",
-        },
-        {
-            title: "Selection Sort Visualization",
-            description: "A C++ program that visualizes the selection sort algorithm.",
-            imageUrl: "https://images.pexels.com/photos/7947750/pexels-photo-7947750.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/Selection-Sort-Visualisation",
+            liveLink: "https://note-app-pi-pink.vercel.app", 
         },
         {
             title: "Weather App",
             description: "A web application using HTML, CSS, and JavaScript that allows users to search for weather information of any city.",
             imageUrl: "https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=600",
             projectLink: "https://github.com/Dutta2005/WeatherApp",
+            liveLink: "https://weather-app-lac-xi-21.vercel.app",
+        },
+        {
+            title: "Text Summarizer",
+            description: "A web application using HTML, CSS, and JavaScript with ChatGPT-4 API which summarizes text.",
+            imageUrl: "https://images.pexels.com/photos/29448394/pexels-photo-29448394/free-photo-of-close-up-of-an-open-book-with-text.jpeg?auto=compress&cs=tinysrgb&w=600",
+            projectLink: "https://github.com/Dutta2005/text-summarizer",
+            liveLink: "https://text-summarizer-puce-delta.vercel.app",
+        },
+        {
+            title: "Ninja Quiz",
+            description: "A quiz game built with HTML, CSS, and JavaScript.",
+            imageUrl: "https://images.pexels.com/photos/28311384/pexels-photo-28311384/free-photo-of-scrabble-board-with-letters-and-numbers-on-it.jpeg?auto=compress&cs=tinysrgb&w=600",
+            projectLink: "https://github.com/Dutta2005/ninja-quiz",
+            liveLink: "https://ninja-quiz-three.vercel.app", 
+        },
+        {
+            title: "Selection Sort Visualization",
+            description: "A C++ program that visualizes the selection sort algorithm.",
+            imageUrl: "https://images.pexels.com/photos/7947750/pexels-photo-7947750.jpeg?auto=compress&cs=tinysrgb&w=600",
+            projectLink: "https://github.com/Dutta2005/Selection-Sort-Visualisation",
+            liveLink: null,
         },
     ];
 
@@ -86,14 +91,26 @@ export default function Projects() {
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
                                     <p className="mt-2 text-gray-700">{project.description}</p>
-                                    <a
-                                        href={project.projectLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-4 inline-block bg-orange-700 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300"
-                                    >
-                                        View Project
-                                    </a>
+                                    <div className="mt-4 flex space-x-4">
+                                        <a
+                                            href={project.projectLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-orange-700 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300"
+                                        >
+                                            GitHub
+                                        </a>
+                                        {project.liveLink && (
+                                            <a
+                                                href={project.liveLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="bg-blue-700 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+                                            >
+                                                Visit
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             </motion.div>
                         </motion.div>
