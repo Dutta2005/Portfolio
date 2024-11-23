@@ -46,6 +46,7 @@ export default function Contact() {
                     message: "",
                 });
                 console.log("Form submitted successfully:", response);
+
             } else {
                 setFormStatus({
                     type: "error",
@@ -60,6 +61,10 @@ export default function Contact() {
                 message: "An error occurred. Please try again.",
             });
         }
+
+        setTimeout(() => {
+            setFormStatus(null);
+        }, 5000);
     
         setShowModal(false);
     };
