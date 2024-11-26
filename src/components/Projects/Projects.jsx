@@ -12,10 +12,17 @@ export default function Projects() {
         },
         {
             title: "Weather App",
-            description: "A web application using HTML, CSS, and JavaScript that allows users to search for weather information of any city.",
+            description: "A web application using React and JavaScript with openweathermap API that allows users to search for weather information of any city.",
             imageUrl: "https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/WeatherApp",
-            liveLink: "https://weather-app-lac-xi-21.vercel.app",
+            projectLink: "https://github.com/Dutta2005/weather",
+            liveLink: "https://weather-tan-nu.vercel.app",
+        },
+        {
+            title: "Sorting Visualizer",
+            description: "A web application using ReactJS and sorting algorithms that visualizes the selection sort algorithm.",
+            imageUrl: "https://images.pexels.com/photos/7947750/pexels-photo-7947750.jpeg?auto=compress&cs=tinysrgb&w=600",
+            projectLink: "https://github.com/Dutta2005/sorting-visualizer",
+            liveLink: "https://sorting-visualizer-rho-seven.vercel.app",
         },
         {
             title: "Text Summarizer",
@@ -30,13 +37,6 @@ export default function Projects() {
             imageUrl: "https://images.pexels.com/photos/28311384/pexels-photo-28311384/free-photo-of-scrabble-board-with-letters-and-numbers-on-it.jpeg?auto=compress&cs=tinysrgb&w=600",
             projectLink: "https://github.com/Dutta2005/ninja-quiz",
             liveLink: "https://ninja-quiz-three.vercel.app", 
-        },
-        {
-            title: "Selection Sort Visualization",
-            description: "A C++ program that visualizes the selection sort algorithm.",
-            imageUrl: "https://images.pexels.com/photos/7947750/pexels-photo-7947750.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/Selection-Sort-Visualisation",
-            liveLink: null,
         },
     ];
 
