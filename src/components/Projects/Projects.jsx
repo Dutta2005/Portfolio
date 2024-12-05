@@ -18,6 +18,13 @@ export default function Projects() {
             liveLink: "https://weather-tan-nu.vercel.app",
         },
         {
+            title: "Code Editor",
+            description: "A web application using ReactJS and Monaco Editor and chakra-ui that allows users to write and edit code in real-time.",
+            imageUrl: "	https://images.pexels.com/photos/6804613/pexels-photo-6804613.jpeg?auto=compress&cs=tinysrgb&w=600",
+            projectLink: "https://github.com/Dutta2005/Code-Editor/",
+            liveLink: "https://code-editor-ten-beta.vercel.app/",
+        },
+        {
             title: "Sorting Visualizer",
             description: "A web application using ReactJS and sorting algorithms that visualizes the selection sort algorithm.",
             imageUrl: "https://images.pexels.com/photos/7947750/pexels-photo-7947750.jpeg?auto=compress&cs=tinysrgb&w=600",
