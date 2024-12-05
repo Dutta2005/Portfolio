@@ -22,7 +22,7 @@ export default function Projects() {
             description: "A web application using ReactJS and Monaco Editor and chakra-ui that allows users to write and edit code in real-time.",
             imageUrl: "	https://images.pexels.com/photos/6804613/pexels-photo-6804613.jpeg?auto=compress&cs=tinysrgb&w=600",
             projectLink: "https://github.com/Dutta2005/Code-Editor/",
-            liveLink: "https://code-editor-ten-beta.vercel.app/",
+            liveLink: "https://code-editor-mauve-iota.vercel.app/",
         },
         {
             title: "Sorting Visualizer",
