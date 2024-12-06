@@ -32,13 +32,6 @@ export default function Projects() {
             liveLink: "https://sorting-visualizer-rho-seven.vercel.app",
         },
         {
-            title: "Text Summarizer",
-            description: "A web application using HTML, CSS, and JavaScript with ChatGPT-4 API which summarizes text.",
-            imageUrl: "https://images.pexels.com/photos/29448394/pexels-photo-29448394/free-photo-of-close-up-of-an-open-book-with-text.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/text-summarizer",
-            liveLink: "https://text-summarizer-puce-delta.vercel.app",
-        },
-        {
             title: "Ninja Quiz",
             description: "A quiz game built with HTML, CSS, and JavaScript.",
             imageUrl: "https://images.pexels.com/photos/28311384/pexels-photo-28311384/free-photo-of-scrabble-board-with-letters-and-numbers-on-it.jpeg?auto=compress&cs=tinysrgb&w=600",
