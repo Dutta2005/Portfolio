@@ -41,7 +41,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="py-16 bg-gray-50">
+        <div className="py-16 min-h-screen">
             <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="text-center">
                     <motion.h2
