@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub } from 'react-icons/fa';
-import { SiCplusplus, SiMongodb, SiC, SiTailwindcss, SiExpress } from 'react-icons/si'; // C++ and MongoDB icons from react-icons
+import { SiCplusplus, SiMongodb, SiC, SiTailwindcss, SiExpress, SiTypescript, SiNextdotjs } from 'react-icons/si'; // C++ and MongoDB icons from react-icons
 import { motion } from 'framer-motion';
 
 export default function About() {
@@ -56,11 +56,13 @@ export default function About() {
                 { icon: <FaHtml5 className="text-4xl text-orange-500" />, name: 'HTML5' },
                 { icon: <FaCss3Alt className="text-4xl text-blue-600" />, name: 'CSS3' },
                 { icon: <FaJs className="text-4xl text-yellow-400" />, name: 'JavaScript' },
+                { icon: <SiTypescript className="text-4xl text-blue-500" />, name: 'TypeScript' },
                 { icon: <FaReact className="text-4xl text-blue-500" />, name: 'React' },
                 { icon: <SiTailwindcss className="text-4xl text-blue-500" />, name: 'Tailwind CSS' },
                 { icon: <FaNodeJs className="text-4xl text-green-600" />, name: 'Node.js' },
                 { icon: <SiExpress className="text-4xl text-green-600" />, name: 'Express' },
                 { icon: <SiMongodb className="text-4xl text-green-700" />, name: 'MongoDB' },
+                { icon: <SiNextdotjs className="text-4xl text-black" />, name: 'Next.js' },
                 { icon: <FaGitAlt className="text-4xl text-orange-500" />, name: 'Git' },
                 { icon: <FaGithub className="text-4xl text-black" />, name: 'GitHub' },
               ].map(({ icon, name }, index) => (

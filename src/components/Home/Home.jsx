@@ -34,7 +34,7 @@ export default function Home() {
             </motion.p>
             {/* Resume Button */}
             <motion.a
-              href="https://drive.google.com/file/d/1p2DdK7v2OYDxu0mWZjQ6N9E1e0N2nq5E/view" // Replace with actual resume file path or URL
+              href="https://drive.google.com/file/d/1IyMQvpWm8IKYuKJcSX_JWacKcQuOvbmD/view?usp=sharing" // Replace with actual resume file path or URL
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-6 px-6 py-3 bg-orange-700 text-white font-semibold rounded-lg shadow-md hover:bg-orange-800 transition duration-300"
