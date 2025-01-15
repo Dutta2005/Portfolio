@@ -56,7 +56,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-orange-500 rounded-full blur-xl opacity-50"></div>
             <div className="relative aspect-square rounded-full overflow-hidden border-4 border-white shadow-lg">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
                 src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Illustration of Remote2"
                 loading="lazy"
