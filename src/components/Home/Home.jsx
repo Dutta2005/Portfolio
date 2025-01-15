@@ -6,10 +6,10 @@ export default function Home() {
     <div className="mx-auto w-full max-w-7xl">
       <aside className="relative overflow-hidden text-black rounded-lg px-4 sm:px-16 py-10 sm:py-20">
         {/* Text Section */}
-        <div className="relative z-10 max-w-screen-xl mx-auto flex flex-col-reverse sm:flex-row items-center sm:items-start sm:justify-between gap-40">
-          <div className="sm:mt-1 mt-10 text-center sm:text-left sm:space-y-6">
+        <div className="relative z-10 max-w-screen-xl mx-auto flex flex-col-reverse sm:flex-row items-center sm:items-start sm:justify-between sm:gap-40">
+          <div className="sm:mt-1 mt-6 text-center sm:text-left sm:space-y-6">
             <motion.h2
-              className="text-3xl font-bold sm:text-5xl leading-tight mt-16"
+              className="text-3xl font-bold sm:text-5xl leading-tight mt-4 sm:mt-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
@@ -48,7 +48,7 @@ export default function Home() {
           
           {/* Image Section with Circular Shape */}
           <motion.div
-            className="w-72 sm:w-96 mx-auto sm:ml-10 flex-shrink-0 relative p-4"
+            className="w-64 sm:w-96 mx-auto sm:ml-10 flex-shrink-0 relative p-4 mb-4 sm:mb-0"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
@@ -56,7 +56,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-orange-500 rounded-full blur-xl opacity-50"></div>
             <div className="relative aspect-square rounded-full overflow-hidden border-4 border-white shadow-lg">
               <img
-                className="w-full h-full object-fill"
+                className="w-full h-full object-cover"
                 src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Illustration of Remote2"
                 loading="lazy"
@@ -68,4 +68,3 @@ export default function Home() {
     </div>
   );
 }
-
