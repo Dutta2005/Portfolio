@@ -12,7 +12,7 @@ function Layout() {
       <div id='bg'></div>
       <div className='relative'>
         <Header />
-        <main className='pt-20 min-h-screen'>
+        <main className='min-h-screen'>
           <Outlet />
         </main>
         <Footer />

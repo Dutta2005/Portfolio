@@ -76,25 +76,25 @@ export default function Contact() {
     };
 
     return (
-        <div className="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
+        <div className="relative flex items-top justify-center min-h-screen bg-gray-900 sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                     <motion.div
-                            className="p-6 mr-2 bg-gray-100 sm:rounded-lg"
+                            className="p-6 mr-2 bg-gray-800 sm:rounded-lg"
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1 }}
                         >
-                            <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
+                            <h1 className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
                                 Get in touch:
                             </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
+                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-300 mt-2">
                                 Fill in the form to start a conversation
                             </p>
 
                             <motion.div
-                                className="flex items-center mt-4 text-gray-600"
+                                className="flex items-center mt-4 text-gray-300"
                                 initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1, delay: 0.2 }}
@@ -106,7 +106,7 @@ export default function Contact() {
                                     strokeLinejoin="round"
                                     strokeWidth="1.5"
                                     viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
+                                    className="w-8 h-8 text-orange-500"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -121,7 +121,7 @@ export default function Contact() {
                             </motion.div>
 
                             <motion.div
-                                className="flex items-center mt-2 text-gray-600"
+                                className="flex items-center mt-2 text-gray-300"
                                 initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1, delay: 0.4 }}
@@ -133,7 +133,7 @@ export default function Contact() {
                                     strokeLinejoin="round"
                                     strokeWidth="1.5"
                                     viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
+                                    className="w-8 h-8 text-orange-500"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -163,7 +163,7 @@ export default function Contact() {
                                     placeholder="Full Name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-700 border border-gray-600 text-white font-semibold focus:border-orange-500 focus:outline-none placeholder-gray-400"
                                 />
                             </div>
 
@@ -175,7 +175,7 @@ export default function Contact() {
                                     placeholder="Email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-700 border border-gray-600 text-white font-semibold focus:border-orange-500 focus:outline-none placeholder-gray-400"
                                 />
                             </div>
 
@@ -187,7 +187,7 @@ export default function Contact() {
                                     placeholder="Telephone Number"
                                     value={formData.tel}
                                     onChange={handleChange}
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-700 border border-gray-600 text-white font-semibold focus:border-orange-500 focus:outline-none placeholder-gray-400"
                                 />
                             </div>
 
@@ -199,14 +199,14 @@ export default function Contact() {
                                     placeholder="Your Message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-700 border border-gray-600 text-white font-semibold focus:border-orange-500 focus:outline-none placeholder-gray-400"
                                     required
                                 ></textarea>
                             </div>
 
                             <motion.button
                                 type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                className="md:w-32 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1, delay: 0.5 }}
@@ -220,22 +220,22 @@ export default function Contact() {
 
             {/* Confirmation Modal */}
             {showModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg p-6 shadow-lg w-96">
-                        <h2 className="text-lg font-bold text-gray-800">Confirm Submission</h2>
-                        <p className="text-gray-600 mt-2">
+                <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+                    <div className="bg-gray-800 rounded-lg p-6 shadow-lg w-96 border border-gray-700">
+                        <h2 className="text-lg font-bold text-white">Confirm Submission</h2>
+                        <p className="text-gray-300 mt-2">
                             Are you sure you want to submit this form?
                         </p>
                         <div className="flex justify-end mt-4">
                             <button
                                 onClick={() => setShowModal(false)}
-                                className="bg-gray-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-gray-600"
+                                className="bg-gray-600 text-white px-4 py-2 rounded-lg mr-2 hover:bg-gray-700"
                             >
                                 Cancel
                             </button>
                             <button
                                 onClick={handleFormSubmit}
-                                className="bg-orange-700 text-white px-4 py-2 rounded-lg hover:bg-orange-800"
+                                className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700"
                             >
                                 Submit
                             </button>
@@ -246,17 +246,43 @@ export default function Contact() {
 
             {/* Form Submission Status */}
             {formStatus && (
-                <div
-                    className={`fixed top-20 left-1/2 transform -translate-x-1/2 w-96 p-4 rounded-lg shadow-lg ${
-                        formStatus.type === "success"
-                            ? "bg-green-500 text-white"
-                            : "bg-red-500 text-white"
-                    }`}
-                >
-                    <h3 className="font-semibold text-lg">{formStatus.type === "success" ? "Success!" : "Error!"}</h3>
-                    <p>{formStatus.message}</p>
-                </div>
-            )}
+    <motion.div
+        initial={{ opacity: 0, y: -50, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: -50, scale: 0.9 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="fixed top-16 left-1/2 transform -translate-x-1/2 w-72 p-3 rounded-lg shadow-lg bg-gray-700 flex flex-col items-start"
+    >
+        <div className="flex justify-between items-center w-full">
+            <h3
+                className={`text-sm font-semibold ${
+                    formStatus.type === "success" ? "text-green-400" : "text-red-400"
+                }`}
+            >
+                {formStatus.type === "success" ? "Success!" : "Error!"}
+            </h3>
+            <button
+                onClick={() => setFormStatus(null)}
+                className="text-gray-400 hover:text-gray-200 text-sm"
+            >
+                ✖
+            </button>
+        </div>
+        <p className="mt-1 text-xs text-gray-300">{formStatus.message}</p>
+
+        {/* Responsive Animated Progress Bar */}
+        <motion.div
+            initial={{ width: "100%" }}
+            animate={{ width: "0%" }}
+            transition={{ duration: 4.5, ease: "linear" }}
+            className={`h-1 mt-2 rounded-full ${
+                formStatus.type === "success" ? "bg-green-400" : "bg-red-400"
+            }`}
+            style={{ width: "90%" }} // Slightly less width for mobile optimization
+        />
+    </motion.div>
+)}
+
         </div>
     );
 }
