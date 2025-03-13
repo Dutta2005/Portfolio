@@ -5,10 +5,17 @@ export default function Projects() {
     const projects = [
         {
             title: "Jeevan Verse",
-            description: "A web application using MERN stack where users can find symptoms, request blood, join discussions, and support health campaigns—all in one place.",
+            description: "A MERN stack web app where users can find symptoms, request blood, join discussions, and support health campaigns—all in one place.",
             imageUrl: "https://images.pexels.com/photos/31142323/pexels-photo-31142323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             projectLink: "https://github.com/Dutta2005/Jeevan-verse",
             liveLink: "https://jeevan-verse.vercel.app/",
+        },
+        {
+            title: "Medi-Track",
+            description: "A React Native & Appwrite app for tracking health inventory, usage, and reminders with low stock & expiry alerts.",
+            imageUrl: "https://images.pexels.com/photos/31143682/pexels-photo-31143682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            projectLink: "https://github.com/Dutta2005/Medi-Track",
+            liveLink: "https://github.com/Dutta2005/Medi-Track",
         },
         {
             title: "Code Editor",
@@ -37,14 +44,7 @@ export default function Projects() {
             imageUrl: "https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=600",
             projectLink: "https://github.com/Dutta2005/weather",
             liveLink: "https://weather-tan-nu.vercel.app",
-        },
-        {
-            title: "Ninja Quiz",
-            description: "A quiz game built with HTML, CSS, and JavaScript.",
-            imageUrl: "https://images.pexels.com/photos/28311384/pexels-photo-28311384/free-photo-of-scrabble-board-with-letters-and-numbers-on-it.jpeg?auto=compress&cs=tinysrgb&w=600",
-            projectLink: "https://github.com/Dutta2005/ninja-quiz",
-            liveLink: "https://ninja-quiz-three.vercel.app", 
-        },
+        }
     ];
 
     return (

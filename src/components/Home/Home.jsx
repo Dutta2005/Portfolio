@@ -35,7 +35,7 @@ export default function Home() {
               </motion.p>
               {/* Resume Button */}
               <motion.a
-                href="https://drive.google.com/file/d/1IyMQvpWm8IKYuKJcSX_JWacKcQuOvbmD/view?usp=sharing"
+                href={import.meta.env.VITE_MY_RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-6 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
