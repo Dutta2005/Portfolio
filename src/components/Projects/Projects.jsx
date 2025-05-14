@@ -18,6 +18,13 @@ export default function Projects() {
             liveLink: "https://github.com/Dutta2005/Medi-Track",
         },
         {
+            title: "PixelFlow",
+            description: "ANext.js app to compress videos losslessly and resize images for social media, using Clerk, Cloudinary, Prisma, and NeonDB.",
+            imageUrl: "https://images.pexels.com/photos/32080007/pexels-photo-32080007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            projectLink: "https://github.com/Dutta2005/PixelFlow",
+            liveLink: "https://www.aicloudinary.xyz/",
+        },
+        {
             title: "Code Editor",
             description: "A web application using ReactJS and Monaco Editor and chakra-ui that allows users to write and edit code in real-time.",
             imageUrl: "	https://images.pexels.com/photos/6804613/pexels-photo-6804613.jpeg?auto=compress&cs=tinysrgb&w=600",

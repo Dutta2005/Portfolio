@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
   return (
@@ -17,22 +18,37 @@ export default function Home() {
               >
                 Hi, 👋 I am <span className="text-orange-500">Raj Dutta</span>
               </motion.h2>
-              <motion.p
-                className="text-lg sm:text-2xl text-gray-300 mt-4 font-bold"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
+
+              {/* Typing effect */}
+              <motion.div
+                className="text-lg sm:text-2xl text-orange-400 mt-4 font-bold min-h-[32px]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
               >
-                A passionate MERN stack developer
-              </motion.p>
+                <span>
+                  <Typewriter
+                    words={['Full stack developer', 'Open Source Contributor']}
+                    loop={Infinity}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1500}
+                  />
+                </span>
+              </motion.div>
+
+              {/* Quote with effects */}
               <motion.p
-                className="text-lg sm:text-2xl text-gray-300 mt-4 font-mono"
+                className="text-lg sm:text-2xl text-gray-300 mt-4 font-mono animate-glow"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
+                transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
               >
                 "Life is a divine algorithm, intricately coded by the universe, yet yours to rewrite and optimize."
               </motion.p>
+
               {/* Resume Button */}
               <motion.a
                 href={import.meta.env.VITE_MY_RESUME_URL}
@@ -41,13 +57,13 @@ export default function Home() {
                 className="inline-block mt-6 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.9 }}
+                transition={{ duration: 1, ease: 'easeOut', delay: 1.2 }}
               >
                 View My Resume
               </motion.a>
             </div>
-            
-            {/* Image Section with Circular Shape */}
+
+            {/* Image Section */}
             <motion.div
               className="w-64 sm:w-96 mx-auto sm:ml-10 flex-shrink-0 relative p-4 mb-4 sm:mb-0"
               initial={{ opacity: 0, y: 50 }}

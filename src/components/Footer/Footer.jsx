@@ -4,84 +4,12 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-8 md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white uppercase">Quick links</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <Link to="/" className="hover:underline hover:text-gray-900 dark:hover:text-white">
-                  Home
-                </Link>
-              </li>
-              <li className="mb-4">
-                <Link to="/about" className="hover:underline hover:text-gray-900 dark:hover:text-white">
-                  About
-                </Link>
-              </li>
-              <li className="mb-4">
-                <Link to="/projects" className="hover:underline hover:text-gray-900 dark:hover:text-white">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:underline hover:text-gray-900 dark:hover:text-white">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white uppercase">Follow me</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a
-                  href="https://github.com/Dutta2005"
-                  className="hover:underline hover:text-gray-900 dark:hover:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li className="mb-4">
-                <a
-                  href="https://x.com/RajDutta2005"
-                  className="hover:underline hover:text-gray-900 dark:hover:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  X (Twitter)
-                </a>
-              </li>
-              <li className="mb-4">
-                <a
-                  href="https://www.instagram.com/raj_rd_001/"
-                  className="hover:underline hover:text-gray-900 dark:hover:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/rajdutta062005/"
-                  className="hover:underline hover:text-gray-900 dark:hover:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+        <div className="flex flex-col items-center sm:flex-row sm:justify-between p-4 max-w-screen-xl mx-auto">
           <span className="text-sm text-gray-500 dark:text-gray-400 text-center sm:text-start mb-4 sm:mb-0">
-            Made by Raj Dutta. With love ❤️
+            Made by <a href="https://github.com/Dutta2005" className="font-bold text-blue-700 hover:underline">Raj Dutta</a>. 
+            With <span className="text-red-500 animate-heartbeat inline-block">❤️</span> and <span className="text-yellow-500 animate-steam inline-block">☕</span>.
           </span>
+
           <div className="flex space-x-5">
             <a
               href="https://www.instagram.com/raj_rd_001/"
@@ -164,7 +92,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
     </footer>
   );
 }
