@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
     const projects = [
@@ -105,25 +106,30 @@ export default function Projects() {
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-white">{project.title}</h3>
                                     <p className="mt-2 text-gray-300">{project.description}</p>
-                                    <div className="mt-4 flex space-x-4">
-                                        <a
-                                            href={project.projectLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="bg-orange-600 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-500 transition duration-300"
-                                        >
-                                            GitHub
-                                        </a>
-                                        {project.liveLink && (
-                                            <a
-                                                href={project.liveLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-500 transition duration-300"
-                                            >
-                                                Visit
-                                            </a>
-                                        )}
+                                    <div className="flex justify-between pt-2">
+                                    <motion.a 
+                                        href={project.projectLink} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-1 text-sm font-medium text-gray-300 hover:text-orange-400 transition-colors"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <Github size={16} />
+                                        <span>Source Code</span>
+                                    </motion.a>
+                                    
+                                    <motion.a 
+                                        href={project.liveLink} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-1 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <ExternalLink size={16} />
+                                        <span>Live Demo</span>
+                                    </motion.a>
                                     </div>
                                 </div>
                             </motion.div>

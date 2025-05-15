@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
+import { Github, Instagram, Linkedin, X } from "lucide-react";
+import {SiX} from "react-icons/si";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -146,6 +148,26 @@ export default function Contact() {
                                     rdhack247@gmail.com
                                 </div>
                             </motion.div>
+                            <motion.div
+                                className="flex items-center mt-2 text-gray-300"
+                                initial={{ opacity: 0, x: -50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 1, delay: 0.6 }}
+                            >
+                                <a href="https://github.com/Dutta2005" target="_blank" rel="noopener noreferrer">
+                                    <Github className="w-8 h-8 text-orange-500" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/rajdutta062005/" target="_blank" rel="noopener noreferrer">
+                                    <Linkedin className="w-8 h-8 text-orange-500 ml-4" />
+                                </a>
+                                <a href="https://www.instagram.com/raj_rd_001/" target="_blank" rel="noopener noreferrer">
+                                    <Instagram className="w-8 h-8 text-orange-500 ml-4" />
+                                </a>
+                                <a href="https://x.com/RajDutta2005" target="_blank" rel="noopener noreferrer">
+                                   <SiX className="w-8 h-8 text-orange-500 ml-4" /> 
+                                </a>
+                            </motion.div>
+
                         </motion.div>
 
                         <motion.form
