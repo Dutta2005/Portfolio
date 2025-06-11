@@ -13,18 +13,25 @@ const AnimatedProjectsSection = () => {
             liveLink: "https://jeevan-verse.vercel.app/",
         },
         {
+            title: "Stremify",
+            description: "A MERN stack web app enabling real-time chat, video calls, and cultural exchange with native speakers worldwide—built for seamless global communication.",
+            imageUrl: "https://images.pexels.com/photos/32519561/pexels-photo-32519561.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            projectLink: "https://github.com/Dutta2005/stremify",
+            liveLink: "https://stremify-tau.vercel.app",
+        },
+        {
+          title: "PixelFlow",
+          description: "ANext.js app to compress videos losslessly and resize images for social media, using Clerk, Cloudinary, Prisma, and NeonDB.",
+          imageUrl: "https://images.pexels.com/photos/32080007/pexels-photo-32080007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          projectLink: "https://github.com/Dutta2005/PixelFlow",
+          liveLink: "https://www.aicloudinary.xyz/",
+        },
+        {
             title: "Medi-Track",
             description: "A React Native & Appwrite app for tracking health inventory, usage, and reminders with low stock & expiry alerts.",
             imageUrl: "https://images.pexels.com/photos/31143682/pexels-photo-31143682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             projectLink: "https://github.com/Dutta2005/Medi-Track",
             liveLink: "https://github.com/Dutta2005/Medi-Track",
-        },
-        {
-            title: "PixelFlow",
-            description: "ANext.js app to compress videos losslessly and resize images for social media, using Clerk, Cloudinary, Prisma, and NeonDB.",
-            imageUrl: "https://images.pexels.com/photos/32080007/pexels-photo-32080007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            projectLink: "https://github.com/Dutta2005/PixelFlow",
-            liveLink: "https://www.aicloudinary.xyz/",
         },
         {
             title: "Code Editor",

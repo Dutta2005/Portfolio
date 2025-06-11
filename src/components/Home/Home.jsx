@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import AnimatedProjectsSection from './ProjectSection';
 import Achievements from './Achievements';
+import Experience from './Experience';
 import {TopSkillsIconCloud} from './TopSkills';
 
 export default function Home() {
@@ -129,6 +130,17 @@ export default function Home() {
         </div>
       </div>
       
+      <div className="relative h-24 overflow-hidden bg-gray-900">
+        <motion.div 
+          className="absolute w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent top-1/2 transform -translate-y-1/2"
+          initial={{ x: "-100%" }}
+          animate={{ x: "100%" }}
+          transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+        />
+      </div>
+      
+      <Experience />
+
       <div className="relative h-24 overflow-hidden bg-gray-900">
         <motion.div 
           className="absolute w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent top-1/2 transform -translate-y-1/2"
