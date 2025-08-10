@@ -20,6 +20,14 @@ const AnimatedProjectsSection = () => {
             liveLink: "https://stremify-tau.vercel.app",
         },
         {
+            title: "ReadmeEasy",
+            description: "A web application using Nextjs and OPENAI API that generate comprehensive README.md files in seconds",
+            techStack: ["Next.js", "Shadcn UI", "OpenAI API"],
+            imageUrl: "https://images.pexels.com/photos/33381355/pexels-photo-33381355.jpeg",
+            projectLink: "https://github.com/Dutta2005/ReadmeEasy",
+            liveLink: "https://readme-easy.vercel.app",
+        },
+        {
             title: "Droply",
             description: "A Next.js app which a simple and secure cloud app to store, view, and manage your image files",
             imageUrl: "https://images.pexels.com/photos/32957326/pexels-photo-32957326.jpeg",
@@ -28,7 +36,7 @@ const AnimatedProjectsSection = () => {
         },
         {
           title: "PixelFlow",
-          description: "ANext.js app to compress videos losslessly and resize images for social media, using Clerk, Cloudinary, Prisma, and NeonDB.",
+          description: "A Next.js app to compress videos losslessly and resize images for social media, using Clerk, Cloudinary, Prisma, and NeonDB.",
           imageUrl: "https://images.pexels.com/photos/32957365/pexels-photo-32957365.jpeg",
           projectLink: "https://github.com/Dutta2005/PixelFlow",
           liveLink: "https://www.aicloudinary.xyz/",
@@ -39,13 +47,6 @@ const AnimatedProjectsSection = () => {
             imageUrl: "https://images.pexels.com/photos/32957366/pexels-photo-32957366.jpeg",
             projectLink: "https://github.com/Dutta2005/Code-Editor/",
             liveLink: "https://code-editor-mauve-iota.vercel.app/",
-        },
-        {
-            title: "Sorting Visualizer",
-            description: "A web application using ReactJS and sorting algorithms that visualizes the selection sort algorithm.",
-            imageUrl: "https://images.pexels.com/photos/32957215/pexels-photo-32957215.jpeg",
-            projectLink: "https://github.com/Dutta2005/sorting-visualizer",
-            liveLink: "https://sorting-visualizer-rho-seven.vercel.app",
         },
     ];
 

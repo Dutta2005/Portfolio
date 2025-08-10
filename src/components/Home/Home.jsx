@@ -4,7 +4,9 @@ import { Typewriter } from 'react-simple-typewriter';
 import AnimatedProjectsSection from './ProjectSection';
 import Achievements from './Achievements';
 import Experience from './Experience';
-import {TopSkillsIconCloud} from './TopSkills';
+import { TopSkillsIconCloud } from './TopSkills';
+// Add Lucide icons
+import { Github, Linkedin, Twitter, File } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -51,19 +53,67 @@ export default function Home() {
                   "Life is a divine algorithm, intricately coded by the universe, yet yours to rewrite and optimize."
                 </motion.p>
 
-                <motion.a
-                  href={import.meta.env.VITE_MY_RESUME_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-6 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, ease: 'easeOut', delay: 1.2 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  View My Resume
-                </motion.a>
+                <div className="flex items-center justify-center sm:justify-start gap-4 mt-6">
+                  <motion.a
+                    href="https://github.com/Dutta2005"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="text-orange-400 hover:text-orange-500 transition"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: 'easeOut', delay: 1.2 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Github size={28} />
+                  </motion.a>
+                  <motion.a
+                    href="https://www.linkedin.com/in/rajdutta062005/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="text-orange-400 hover:text-orange-500 transition"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: 'easeOut', delay: 1.25 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Linkedin size={28} />
+                  </motion.a>
+                  <motion.a
+                    href="https://x.com/RajDutta2005"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                    className="text-orange-400 hover:text-orange-500 transition"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: 'easeOut', delay: 1.3 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Twitter size={28} />
+                  </motion.a>
+                  {/* Resume Button */}
+                  <motion.a
+                    href={import.meta.env.VITE_MY_RESUME_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-md transition duration-300 ml-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: 'easeOut', delay: 1.35 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                   <span className='flex items-center'> 
+                    <File size={18} className="mr-2" />
+                    View My Resume
+                    </span>
+                  </motion.a>
+                </div>
               </div>
 
               <motion.div
@@ -72,9 +122,9 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
               >
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-orange-500 rounded-full blur-xl opacity-50"
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.05, 1],
                   }}
                   transition={{
@@ -83,7 +133,7 @@ export default function Home() {
                     repeatType: "reverse"
                   }}
                 ></motion.div>
-                <motion.div 
+                <motion.div
                   className="relative aspect-square rounded-full overflow-hidden border-4 border-gray-700 shadow-lg"
                   whileHover={{ rotate: 5 }}
                   transition={{ duration: 0.3 }}
@@ -102,55 +152,54 @@ export default function Home() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         className="flex justify-center -mt-16 mb-4 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{ 
+        transition={{
           opacity: { delay: 2, duration: 1 },
           y: { delay: 2, duration: 1.5, repeat: Infinity }
         }}
       >
         <div className="w-8 h-12 rounded-full border-2 border-orange-400 flex justify-center pt-2">
-          <motion.div 
+          <motion.div
             className="w-1.5 h-1.5 rounded-full bg-orange-400"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           />
         </div>
       </motion.div>
-      
+
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-900'>
-            <div className="flex-grow">
-              <TopSkillsIconCloud />
-            
+        <div className="flex-grow">
+          <TopSkillsIconCloud />
         </div>
         <div className="col-span-2 p-6 rounded-lg flex flex-col">
-              <AnimatedProjectsSection />
+          <AnimatedProjectsSection />
         </div>
       </div>
-      
+
       <div className="relative h-24 overflow-hidden bg-gray-900">
-        <motion.div 
+        <motion.div
           className="absolute w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent top-1/2 transform -translate-y-1/2"
           initial={{ x: "-100%" }}
           animate={{ x: "100%" }}
           transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
         />
       </div>
-      
+
       <Experience />
 
       <div className="relative h-24 overflow-hidden bg-gray-900">
-        <motion.div 
+        <motion.div
           className="absolute w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent top-1/2 transform -translate-y-1/2"
           initial={{ x: "-100%" }}
           animate={{ x: "100%" }}
           transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
         />
       </div>
-      
+
       <Achievements />
     </>
   );
-}
+};

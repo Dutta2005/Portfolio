@@ -36,7 +36,7 @@ export function TopSkillsIconCloud() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-3xl font-bold text-white mb-3">Top Skills</h2>
+          <h2 className="text-3xl font-bold text-white mb-3 pt-7">Top Skills</h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">Check out some of my top skills and technologies.</p>
         </motion.div>

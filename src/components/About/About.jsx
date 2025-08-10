@@ -50,7 +50,6 @@ export default function About() {
         { name: "React", icon: "devicon-react-original colored" },
         { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
         { name: "Next.js", icon: "devicon-nextjs-plain" },
-        { name: "Shadcn UI", icon: "devicon-shadcn-plain colored" },
       ]
     },
     {
