@@ -13,6 +13,13 @@ const AnimatedProjectsSection = () => {
             liveLink: "https://jeevan-verse.vercel.app/",
         },
         {
+            title: "PortfolioAI",
+            description: "A full-stack web application that automatically generates professional portfolios from uploaded resumes using AI-powered parsing and profession-specific templates.",
+            imageUrl: "https://images.pexels.com/photos/34742373/pexels-photo-34742373.jpeg",
+            projectLink: "https://github.com/Dutta2005/PortfolioAI/",
+            liveLink: "https://portfolio-ai-pied.vercel.app/",
+        },
+        {
             title: "Stremify",
             description: "A MERN stack web app enabling real-time chat, video calls, and cultural exchange with native speakers worldwide—built for seamless global communication.",
             imageUrl: "https://images.pexels.com/photos/32957313/pexels-photo-32957313.jpeg",
@@ -40,13 +47,6 @@ const AnimatedProjectsSection = () => {
           imageUrl: "https://images.pexels.com/photos/32957365/pexels-photo-32957365.jpeg",
           projectLink: "https://github.com/Dutta2005/PixelFlow",
           liveLink: "https://www.aicloudinary.xyz/",
-        },
-        {
-            title: "Code Editor",
-            description: "A web application using ReactJS and Monaco Editor and chakra-ui that allows users to write and edit code in real-time.",
-            imageUrl: "https://images.pexels.com/photos/32957366/pexels-photo-32957366.jpeg",
-            projectLink: "https://github.com/Dutta2005/Code-Editor/",
-            liveLink: "https://code-editor-mauve-iota.vercel.app/",
         },
     ];
 
