@@ -4,21 +4,33 @@ import { motion } from "framer-motion";
 const slugs = [
   "typescript",
   "javascript",
+  "python",
   "react",
   "tailwindcss",
   "html5",
   "css3",
   "nodedotjs",
+  "fastapi",
   "express",
   "nextdotjs",
   "prisma",
   "postgresql",
-   "mongodb",
+  "mongodb",
   "vercel",
+  "render",
   "docker",
   "git",
   "github",
   "visualstudiocode",
+  "amazonaws",
+  "firebase",
+  "supabase",
+  "clerk",
+  "neondb",
+  "langchain",
+  "openai",
+  "pinecone",
+  "mcp"
 ];
 
 export function TopSkillsIconCloud() {
@@ -27,9 +39,9 @@ export function TopSkillsIconCloud() {
   );
 
   return (
-    <>    
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+    <>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
           className="text-center mt-14 mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,9 +53,9 @@ export function TopSkillsIconCloud() {
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">Check out some of my top skills and technologies.</p>
         </motion.div>
       </div>
-    <div className="overflow-hidden py-8">
-      <IconCloud images={images} />
-    </div>
-   </>
+      <div className="overflow-hidden py-8">
+        <IconCloud images={images} />
+      </div>
+    </>
   );
 }

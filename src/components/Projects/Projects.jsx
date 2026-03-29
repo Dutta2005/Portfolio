@@ -13,6 +13,14 @@ export default function Projects() {
             liveLink: "https://jeevan-verse.vercel.app/",
         },
         {
+            title: "Orbit CLI",
+            description: "A powerful AI CLI tool integrating multiple providers (Gemini, OpenAI, Anthropic) with secure authentication and personalized configs—bringing fast, always-on AI productivity directly to your terminal.",
+            techStack: ["Next.js", "Express.js", "AI SDK", "Better Auth", "Prisma", "NeonDB"],
+            imageUrl: "https://images.pexels.com/photos/36794058/pexels-photo-36794058.jpeg",
+            projectLink: "https://github.com/Dutta2005/Orbit-CLI",
+            liveLink: "https://github.com/Dutta2005/Orbit-CLI",
+        },
+        {
             title: "PortfolioAI",
             description: "A full-stack web application that automatically generates professional portfolios from uploaded resumes using AI-powered parsing and profession-specific templates.",
             techStack: ["Next.js", "Shadcn UI", "NextAuth", "OpenAI", "Supabase", "Prisma"],
@@ -23,7 +31,7 @@ export default function Projects() {
         {
             title: "Stremify",
             description: "A MERN stack web app enabling real-time chat, video calls, and cultural exchange with native speakers worldwide—built for seamless global communication.",
-            techStack: ["MERN", "Tailwind CSS" ,"Tanstack-react-query","Stream"],
+            techStack: ["MERN", "Tailwind CSS", "Tanstack-react-query", "Stream"],
             imageUrl: "https://images.pexels.com/photos/32957313/pexels-photo-32957313.jpeg",
             projectLink: "https://github.com/Dutta2005/stremify",
             liveLink: "https://stremify-tau.vercel.app",
@@ -104,7 +112,7 @@ export default function Projects() {
                                 />
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                                    
+
                                     {/* Tech Stack Tags */}
                                     <div className="flex flex-wrap gap-2 mb-4">
                                         {project.techStack.map((tech, techIndex) => (
@@ -112,9 +120,9 @@ export default function Projects() {
                                                 key={techIndex}
                                                 initial={{ opacity: 0, scale: 0.8 }}
                                                 animate={{ opacity: 1, scale: 1 }}
-                                                transition={{ 
-                                                    duration: 0.3, 
-                                                    delay: 0.5 + index * 0.1 + techIndex * 0.05 
+                                                transition={{
+                                                    duration: 0.3,
+                                                    delay: 0.5 + index * 0.1 + techIndex * 0.05
                                                 }}
                                                 whileHover={{ scale: 1.1 }}
                                                 className="px-2 py-1 bg-orange-500/20 text-orange-300 rounded-md text-xs font-medium border border-orange-500/30 hover:bg-orange-500/30 transition-colors cursor-default"
@@ -123,13 +131,13 @@ export default function Projects() {
                                             </motion.span>
                                         ))}
                                     </div>
-                                    
+
                                     <p className="text-gray-300 mb-4">{project.description}</p>
-                                    
+
                                     <div className="flex justify-between pt-2">
-                                        <motion.a 
-                                            href={project.projectLink} 
-                                            target="_blank" 
+                                        <motion.a
+                                            href={project.projectLink}
+                                            target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-1 text-sm font-medium text-gray-300 hover:text-orange-400 transition-colors"
                                             whileHover={{ scale: 1.05 }}
@@ -138,10 +146,10 @@ export default function Projects() {
                                             <Github size={16} />
                                             <span>Source Code</span>
                                         </motion.a>
-                                        
-                                        <motion.a 
-                                            href={project.liveLink} 
-                                            target="_blank" 
+
+                                        <motion.a
+                                            href={project.liveLink}
+                                            target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-1 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors"
                                             whileHover={{ scale: 1.05 }}

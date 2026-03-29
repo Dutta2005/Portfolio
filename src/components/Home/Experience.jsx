@@ -1,28 +1,41 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Briefcase, 
-  Calendar, 
-  MapPin, 
-  Rocket, 
-  Code, 
+import {
+  Briefcase,
+  Calendar,
+  MapPin,
+  Rocket,
+  Code,
   Globe,
   Star,
   Zap,
-  Building
+  Building,
+  Users
 } from 'lucide-react';
 
 
 const Experience = () => {
   const [mounted, setMounted] = useState(false);
   const [floatingElements, setFloatingElements] = useState([]);
-  
+
   const experiences = [
     {
       id: 1,
+      title: "Organizer (Core Web Team) & Open Source Mentor",
+      company: "JGEC Winter of Code (JWoC) 2026",
+      duration: "Feb 2026 - Mar 2026",
+      type: "Open Source",
+      description: "Built core backend infrastructure — authentication, project management, and leaderboard systems — powering an open-source event platform at scale. Mentored contributors across DashSummarize (AI Chrome extension) and Orbit CLI (multi-provider AI agent), while collaborating with the web team to deliver a seamless 2-month contribution program.",
+      technologies: ["Node.js", "Express.js", "Supabase", "Next.js", "Gen AI", "Open Source", "Mentorship"],
+      icon: <Users className="w-6 h-6 text-white" />,
+      isRemote: true,
+      orbital: <Star className="w-12 h-12 text-orange-400" />
+    },
+    {
+      id: 2,
       title: "Full Stack Developer Intern",
       company: "Neuxa Global",
-      duration: "May 2025 - Present",
+      duration: "May 2025 - July 2025",
       type: "Internship",
       description: "Embarking on a stellar journey in full-stack development, crafting responsive web applications using modern technologies. Building scalable RESTful APIs and integrating cutting-edge databases to push the boundaries of user experience.",
       technologies: ["Next.js", "Node.js", "Supabase", "Prisma", "TypeScript"],
@@ -31,7 +44,7 @@ const Experience = () => {
       orbital: <Globe className="w-12 h-12 text-orange-400" />
     },
     {
-      id: 2,
+      id: 3,
       title: "Web Developer Intern",
       company: "NeuroNexus Innovations",
       duration: "April 2025 - May 2025",
@@ -46,7 +59,7 @@ const Experience = () => {
 
   useEffect(() => {
     setMounted(true);
-    
+
     // Generate floating space elements
     const elements = Array.from({ length: 6 }, (_, i) => ({
       id: i,
@@ -57,18 +70,18 @@ const Experience = () => {
       delay: Math.random() * 2,
       icon: ['rocket', 'star', 'zap'][Math.floor(Math.random() * 3)]
     }));
-    
+
     setFloatingElements(elements);
   }, []);
 
   if (!mounted) return null;
 
   const renderFloatingIcon = (icon) => {
-    const iconProps = { 
-      className: "w-full h-full text-orange-400 opacity-20", 
+    const iconProps = {
+      className: "w-full h-full text-orange-400 opacity-20",
       style: { filter: "drop-shadow(0 0 6px #f97316)" }
     };
-    
+
     switch (icon) {
       case 'rocket':
         return <Rocket {...iconProps} />;
@@ -123,7 +136,7 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -135,15 +148,15 @@ const Experience = () => {
               Experience
             </span>
           </motion.h2>
-          
-          <motion.p 
+
+          <motion.p
             className="text-lg max-w-2xl mx-auto text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Crafting digital experiences across the development universe. 
+            Crafting digital experiences across the development universe.
             Here's my professional journey through code and innovation.
           </motion.p>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-300 mx-auto mt-6"></div>
@@ -158,9 +171,8 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className={`relative flex flex-col md:flex-row items-start md:items-center mb-16 ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              }`}
+              className={`relative flex flex-col md:flex-row items-start md:items-center mb-16 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                }`}
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -173,7 +185,7 @@ const Experience = () => {
               <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
                 <motion.div
                   className="p-8 rounded-2xl backdrop-blur-md border bg-gradient-to-r from-gray-800/90 to-gray-700/60 border-gray-600/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-orange-500/50"
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.02,
                     boxShadow: "0 25px 50px -12px rgba(249, 115, 22, 0.25)"
                   }}
@@ -223,9 +235,9 @@ const Experience = () => {
                       <motion.span
                         key={techIndex}
                         className="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-orange-400/20 text-orange-300 rounded-lg text-sm font-medium border border-orange-500/30 hover:bg-gradient-to-r hover:from-orange-500/30 hover:to-orange-400/30 transition-all cursor-default"
-                        whileHover={{ 
+                        whileHover={{
                           scale: 1.05,
-                          boxShadow: "0 0 15px rgba(249, 115, 22, 0.3)" 
+                          boxShadow: "0 0 15px rgba(249, 115, 22, 0.3)"
                         }}
                       >
                         {tech}
@@ -274,7 +286,7 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <p className="text-lg text-gray-300">
-            Ready to build something amazing together? 
+            Ready to build something amazing together?
             <span className="font-semibold text-orange-400 ml-2">
               Let's create the next big thing! 🚀
             </span>
