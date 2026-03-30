@@ -89,10 +89,10 @@ export default function Contact() {
                             transition={{ duration: 1 }}
                         >
                             <h1 className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
-                                Get in touch:
+                                Let's <span className="text-orange-500">Connect</span>
                             </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-300 mt-2">
-                                Fill in the form to start a conversation
+                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-400 mt-2">
+                                Got a project idea, a collaboration opportunity, or just want to talk tech? I'd love to hear from you — drop a message and let's build something amazing together.
                             </p>
 
                             <motion.div

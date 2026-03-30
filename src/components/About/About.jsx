@@ -5,6 +5,7 @@ import langchainLogo from '../../assets/langchain.png';
 import openaiLogo from '../../assets/openai.png';
 import pineconeLogo from '../../assets/pinecone.png';
 import mcpLogo from '../../assets/mcp.png';
+import aboutHero from '../../assets/about-hero.png';
 import {
   Code,
   Database,
@@ -35,7 +36,7 @@ export default function About() {
     };
   }, []);
 
-  const [activeCategory, setActiveCategory] = useState("Frontend");
+  const [activeCategory, setActiveCategory] = useState("Programming Languages");
 
   const skillCategories = [
     {
@@ -213,9 +214,9 @@ export default function About() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Developer"
-                  className="w-full h-auto rounded-lg shadow-xl"
+                  src={aboutHero}
+                  alt="Raj Dutta - Full Stack Developer & AI Engineer"
+                  className="w-full rounded-lg shadow-xl object-cover"
                 />
               </motion.div>
             </div>
@@ -232,18 +233,23 @@ export default function About() {
               }}
             >
               <h3 className="text-2xl font-bold text-white mb-4">
-                Full Stack Developer
+                Full Stack Developer & AI Engineer
               </h3>
               <p className="text-gray-300 mb-4">
-                I am a passionate developer with expertise in building modern web applications.
-                I enjoy solving complex problems and creating intuitive, dynamic user experiences.
+                I'm a full-stack developer specializing in the <span className="text-orange-400 font-semibold">Next.js ecosystem</span> and <span className="text-orange-400 font-semibold">AI-powered applications</span>.
+                I architect scalable web platforms, developer tools, and SaaS products — with a deep focus on secure backend systems, real-time features, and intelligent AI integrations using LLM APIs, RAG pipelines, and agentic workflows.
               </p>
+              <div className="flex flex-wrap gap-3 mb-4">
+                <span className="px-3 py-1 text-xs font-medium bg-orange-500 bg-opacity-20 text-orange-300 rounded-full border border-orange-500/30">Open Source Mentor</span>
+                <span className="px-3 py-1 text-xs font-medium bg-orange-500 bg-opacity-20 text-orange-300 rounded-full border border-orange-500/30">Hackwars 2025 Winner</span>
+                <span className="px-3 py-1 text-xs font-medium bg-orange-500 bg-opacity-20 text-orange-300 rounded-full border border-orange-500/30">SWOC S5 — Rank 33 / 330+</span>
+              </div>
               <motion.div
                 className="flex items-center text-orange-400 font-medium cursor-pointer group"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <a href="/projects">View my work</a>
+                <a href="https://github.com/Dutta2005?tab=repositories">View my work</a>
                 <MoveRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </motion.div>
             </motion.div>
@@ -266,8 +272,8 @@ export default function About() {
               className="text-gray-300 mb-8"
               variants={itemVariants}
             >
-              Throughout my journey as a developer, I've gained experience with various technologies.
-              Here's a breakdown of my technical expertise:
+              From crafting pixel-perfect frontends to engineering robust backend architectures and integrating cutting-edge AI —
+              here's the arsenal of technologies I wield to turn ideas into production-ready products:
             </motion.p>
 
             {/* Category Navigation Buttons */}
@@ -388,7 +394,7 @@ export default function About() {
                 transition={{ delay: 0.8 }}
               >
                 <Layers className="mr-2 text-orange-400" size={20} />
-                Looking Forward
+                What Drives Me Forward
               </motion.h4>
               <motion.p
                 className="text-gray-300"
@@ -396,8 +402,9 @@ export default function About() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9 }}
               >
-                I'm always excited to learn new technologies and contribute to meaningful projects.
-                Currently exploring cloud technologies and serverless architectures.
+                I'm passionate about open-source collaboration and building developer-focused tools that make an impact.
+                Currently diving deeper into <span className="text-orange-400">agentic AI workflows</span>, <span className="text-orange-400">Model Context Protocol (MCP)</span>,
+                and cloud-native architectures — always pushing the boundaries of what's possible at the intersection of web development and artificial intelligence.
               </motion.p>
             </motion.div>
           </motion.div>

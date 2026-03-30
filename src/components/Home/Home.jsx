@@ -33,7 +33,7 @@ export default function Home() {
                 >
                   <span>
                     <Typewriter
-                      words={['Full stack developer', 'Open Source Contributor']}
+                      words={['Full Stack Developer', 'AI Engineer', 'SaaS Builder', 'Open Source Mentor']}
                       loop={Infinity}
                       cursor
                       cursorStyle="|"
@@ -45,10 +45,19 @@ export default function Home() {
                 </motion.div>
 
                 <motion.p
-                  className="text-lg sm:text-2xl text-gray-300 mt-4 font-mono animate-glow"
+                  className="text-base sm:text-xl text-gray-300 mt-4 max-w-lg leading-relaxed"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
+                >
+                  I build scalable web platforms, AI-powered tools, and developer-first SaaS products using the <span className="text-orange-400 font-semibold">Next.js ecosystem</span>, <span className="text-orange-400 font-semibold">LLM integrations</span>, and <span className="text-orange-400 font-semibold">agentic workflows</span>.
+                </motion.p>
+
+                <motion.p
+                  className="text-lg sm:text-xl text-gray-300 mt-4 font-mono italic animate-glow"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
+                  transition={{ duration: 1, ease: 'easeOut', delay: 1.2 }}
                 >
                   "Life is a divine algorithm, intricately coded by the universe, yet yours to rewrite and optimize."
                 </motion.p>

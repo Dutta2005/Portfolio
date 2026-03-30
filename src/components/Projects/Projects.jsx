@@ -67,20 +67,26 @@ export default function Projects() {
             <div className="container mx-auto px-6 text-gray-300 md:px-12 xl:px-6">
                 <div className="text-center">
                     <motion.h2
-                        className="text-4xl font-bold text-white"
+                        className="text-3xl font-bold text-white md:text-5xl"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
                     >
-                        My Projects
+                        My <span className="text-orange-500">Projects</span>
                     </motion.h2>
+                    <motion.div
+                        className="mt-2 h-1 w-24 bg-orange-500 mx-auto rounded-full"
+                        initial={{ width: 0 }}
+                        animate={{ width: "6rem" }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                    ></motion.div>
                     <motion.p
-                        className="mt-4 text-lg text-gray-300 md:text-2xl"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.2, delay: 0.3, ease: "easeInOut" }}
+                        className="mt-6 text-base text-gray-400 md:text-lg max-w-2xl mx-auto"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1.2, delay: 0.5, ease: "easeInOut" }}
                     >
-                        Here are some of the projects I have worked on.
+                        From AI-powered platforms to developer tools & SaaS products — a showcase of what I've built, shipped, and scaled.
                     </motion.p>
                 </div>
 
