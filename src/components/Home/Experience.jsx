@@ -32,7 +32,19 @@ const Experience = () => {
       orbital: <Star className="w-12 h-12 text-orange-400" />
     },
     {
-      id: 2,
+      id: 3,
+      title: "Software Development Engineer Intern",
+      company: "DeepDuoFoundation",
+      duration: "February 2026 - April 2026",
+      type: "Internship",
+      description: "Warping through the data streams of a live product galaxy — engineered hyperspeed Redis caching that cut through the latency nebula, fortified the core systems against the chaos of auth anomalies and serialization black holes, and supercharged real-time communication via WebSocket thrusters to deliver a feed experience that feels alive across the digital universe.",
+      technologies: ["Redis", "WebSockets", "Node.js", "MongoDB", "REST APIs", "PostgreSQL"],
+      icon: <Code className="w-6 h-6 text-white" />,
+      isRemote: true,
+      orbital: <Rocket className="w-12 h-12 text-orange-400" />
+    },
+    {
+      id: 3,
       title: "Full Stack Developer Intern",
       company: "Neuxa Global",
       duration: "May 2025 - July 2025",
@@ -43,18 +55,6 @@ const Experience = () => {
       isRemote: true,
       orbital: <Globe className="w-12 h-12 text-orange-400" />
     },
-    {
-      id: 3,
-      title: "Web Developer Intern",
-      company: "NeuroNexus Innovations",
-      duration: "April 2025 - May 2025",
-      type: "Internship",
-      description: "Navigating through the cosmos of MERN stack development, creating dynamic user interfaces and seamless backend integrations. Contributing to innovative projects that connect users across the digital galaxy.",
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      icon: <Code className="w-6 h-6 text-white" />,
-      isRemote: true,
-      orbital: <Rocket className="w-12 h-12 text-orange-400" />
-    }
   ];
 
   useEffect(() => {
